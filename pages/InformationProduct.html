@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/Responsive.css">
     <link rel="stylesheet" href="/css/InformationProduct.css">
  
     <title>Document</title>
 </head>
 <body>
-    <div class="wide grid">
+    <div class="wide grid background-blur">
 
         <div class="menu-top row">
             <p class="l-o-3 l-1 col">Home</p>
@@ -32,8 +36,36 @@
             <h1>Buy iPhone 14 Pro</h1>
         </div>
         <div class="row product">
-            <div class="c-10 col img-product">
-                <div>
+            <div id="demo" class="c-10 col carousel slide"  data-ride="carousel">
+                  <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/image/InformationProduct/img-product/trong-luong-iphone-14-pro-max-xtmobile 1.png" alt="Los Angeles" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/image/InformationProduct/img-product/design_startframe__f5z6xj9zkgmu_large.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/image/InformationProduct/img-product/Sau-Tet-nguyen-dan-iPhone-14-Pro-Max-dong-loat-giam-gia-sau-The-pixel3.jpg" alt="New York">
+                    </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+                <!-- <div>
                     <img src="/image/InformationProduct/trong-luong-iphone-14-pro-max-xtmobile 1.png" alt="">
                 </div>
                 <div class="icon-img-product">
@@ -47,8 +79,8 @@
                         <i class="no-selected"></i>
                         <i class="no-selected"></i>
                     </div>
-                </div>
-            </div>
+                </div> -->
+          
 
             <div class="col c-3 select">
                 <p class="title-select">Pick your favorite Color:</p>
@@ -61,10 +93,10 @@
                 <p class="title-storage-select ">Storage. <span>How much space do you need?</span></p>
                 <ul id="price" class="list-storage">
                     <li class="storage" value="128-1099">
-                        <div>
+                        <div class="col c-3">
                             128GB
                         </div>
-                        <div>
+                        <div class="col c-7 c-o-2">
                             From $1099 <br>
                             or $45.79/mo.<br>
                             for 24 mo. before <br> 
@@ -72,10 +104,10 @@
                         </div>
                     </li>
                     <li class="storage">
-                        <div>
+                        <div  class="col c-3">
                             256GB
                         </div>
-                        <div>
+                        <div class="col c-7 c-o-2">
                             From $1199 <br>
                             or $49.95/mo.<br>
                             for 24 mo. before <br> 
@@ -84,10 +116,10 @@
                         </div>
                     </li>
                     <li class="storage" value="512-1399">
-                        <div>
+                        <div  class="col c-3"  >
                             512GB
                         </div>
-                        <div>
+                        <div class="col c-7 c-o-2">
                             From $1399 <br>
                             or $58.29/mo.<br>
                             for 24 mo. before <br> 
@@ -96,10 +128,10 @@
                         </div>
                     </li>
                     <li class="storage" value="1-1599">
-                        <div>
+                        <div class="col c-3" >
                             1T
                         </div>
-                        <div>
+                        <div class="col c-7 c-o-2">
                             From $1599 <br>
                             or $66.62/mo.<br>
                             for 24 mo. before <br> 
@@ -141,9 +173,9 @@
                 Select a payment method.
             </div>
             <ul class="option-bank col c-12">
-                <li class="bank col c-3" value="momo"><img src="/image//InformationProduct/loi-ich-vay-tien-momo-1 1.png" alt=""><p>pay with momo e-wallet.</p></li>
-                <li class="bank col c-3" value="card"><img src="/image//InformationProduct/avatar1681352360126-1681352360832593104442 1.png" alt=""><p>pay with bank card.</p></li>
-                <li class="bank col c-3" value="home"><img src="/image//InformationProduct/pngtree-vector-house-icon-png-image_695369 (1) 1.png" alt=""><p>Payment on delivery.</p></li>
+                <li class="bank col c-3" value="momo"><img src="/image//InformationProduct/icon/loi-ich-vay-tien-momo-1 1.png" alt=""><p>pay with momo e-wallet.</p></li>
+                <li class="bank col c-3" value="card"><img src="/image//InformationProduct/icon/avatar1681352360126-1681352360832593104442 1.png" alt=""><p>pay with bank card.</p></li>
+                <li class="bank col c-3" value="home"><img src="/image//InformationProduct/icon/pngtree-vector-house-icon-png-image_695369 (1) 1.png" alt=""><p>Payment on delivery.</p></li>
             </ul>
         </div>
 
@@ -153,11 +185,11 @@
             </h1>
             <div class="box">
                 <div>
-                    <img src="/image//InformationProduct/iphone-14-pro-deeppurple-witb-202209 1.png" alt="">
+                    <img src="/image/InformationProduct/img-product/iphone-14-pro-deeppurple-witb-202209 1.png" alt="">
                     <p>iPhone 14 Pro</p>
                 </div>
                 <div>
-                    <img src="/image//InformationProduct/iphone-14-pro-cable-witb-202209 1.png" alt="">
+                    <img src="/image//InformationProduct/img-product/iphone-14-pro-cable-witb-202209 1.png" alt="">
                     <p>USB-C to Lightning Cable</p>
                 </div>
             </div>
@@ -174,7 +206,7 @@
                 <div class="item-describe col c-12">
                     <h2>Record movie-quality 4K HDR cinema mode video.</h2>
                     <div class="col c-10">
-                        <div><img src="/image/InformationProduct/may-anh-iphone-14pro 1.png" alt=""></div>
+                        <div><img src="/image/InformationProduct/img-product/may-anh-iphone-14pro 1.png" alt=""></div>
                         
                         <p class="c-5 col text-decribe">- Apple upgraded into iPhone 14 Pro this feature to help users experience the feeling of recording video with a phone but with movie-like quality.</p>
                     </div>
@@ -189,14 +221,14 @@
                             &bull; 12MP ultra-wide-angle camera with f/2.2 aperture, 120-degree field of view. <br>
                             &bull; 12 MP telephoto camera with f/2.8 aperture, 3x digital zoom, OIS. <br>
                            &bull; 12 MP front camera with f/1.9 aperture, 4K video recording, 60 FPS frame rate.</p>
-                           <div><img src="/image/InformationProduct/tinh-nang-dang-chu-y-tren-iPhone-14-series-2 1.png" alt=""></div>
+                           <div><img src="/image/InformationProduct/img-product/tinh-nang-dang-chu-y-tren-iPhone-14-series-2 1.png" alt=""></div>
                     </div>
                 </div>
 
                 <div class="item-describe col c-12">
                     <h2>Always-on Display</h2>
                     <div class="col c-10">
-                        <div><img src="/image/InformationProduct/ra-mat-iphone-14-5 1.png" alt=""></div>
+                        <div><img src="/image/InformationProduct/img-product/ra-mat-iphone-14-5 1.png" alt=""></div>
                         
                         <p class="c-5 col text-decribe">- When you put the phone in sleep mode, you can still see information such as date, time, notifications, ... without turning on the screen. Although the screen is always on, it does not consume battery power, so the battery life is not affected.</p>
                     </div>
@@ -205,14 +237,12 @@
             </div>
             <div id="see-more">
                 <p>see more</p>
-                <img src="/image/InformationProduct/icon-arrow-down.png" alt="">
+                <img src="/image/InformationProduct/icon/icon-arrow-down.png" alt="">
             </div>
 
         </div>
     </div>
 
-    <div class="login">
-
-    </div>
+   
 </body>
 </html>

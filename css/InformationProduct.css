@@ -23,7 +23,7 @@
 }   
 .menu-top > div > ion-icon{
     padding: 10% 0px;
-    
+    margin: 0px 0px 16px;
 }
 
 .title > p{
@@ -35,7 +35,27 @@
     margin-top: 10px;
     width: 100%;
 }
-.img-product{
+.product > div{
+    height: 525px;
+}
+
+.carousel-control-prev{
+    margin-left: 12px;
+    border-radius: 5px 0px 0px 5px;
+}
+.carousel-control-next{
+    margin-right: 12px;
+    border-radius: 5px 0px 0px 5px;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: rgba(0, 0, 0, 0.104);
+}
+.carousel-item > img{
+    width: 100%;
+    height: 525px;
+    
+}
+/* .img-product{
     position: relative;
     height: 560px;
     width: 80%;
@@ -61,7 +81,7 @@
 }
 .icon-img-product > div:last-child{
     margin: 0px auto;
-}
+ } 
 .transfer{
     display: flex;
     justify-content: space-between;
@@ -79,7 +99,8 @@
     background-color: #9D9D9D;
     border-radius: 15px;
     display: inline-block;
-}
+} */
+
 .color{
     list-style: none;
     display: flex;
@@ -133,6 +154,9 @@
     margin: 60px 0px 30px 0px;
     color: #A8A8A8;
 }
+.list-storage{
+    margin-left: 20px;
+}
 .storage{
     width: 100%;
     height: 90px;
@@ -143,11 +167,16 @@
     margin-top: 30px;
     display: flex;
     align-items: center;
-}
 
-.list-storage{
-    
-    
+}
+.storage > div:first-child{
+    font-size: 14px;
+}
+.storage > div:last-child{
+    font-size: 10px;
+}
+ul{
+    padding: 0px;
 }
 .select::-webkit-scrollbar {
     width: 0px; /* ẩn thanh scroll trên Chrome và Safari */
@@ -161,11 +190,7 @@
     scrollbar-color: black; /* đặt màu cho thanh scroll */
     width: 100%;
 }
-.storage > div{
-    width: 40%;
-    padding: 10%;
-    font-size: 12px;
-}
+
 
 .title-payment{
     color: #A8A8A8;
@@ -173,7 +198,7 @@
 
 .payment{
     width: 40%;
-    height: 120px;
+    height: 140px;
     color: #A8A8A8;
     border: 2px solid #A8A8A8;
     border-radius: 10px;
@@ -184,6 +209,18 @@
     justify-content: space-between;
     padding: 20px 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.payment > div{
+    font-size: 14px;
+
+}
+.payment > div *{
+   margin: 0px;
+    
+}
+.payment > p{
+    font-size: 10px;
+    margin: 0px;
 }
 
 .option-payment{
@@ -206,6 +243,7 @@
     align-items: center;
     width: 50%;
     justify-content: space-around;
+    z-index: -1;
 }
 .title-describe{
     text-align: center ;
@@ -226,6 +264,7 @@
 .item-describe > div > div{
     height: 250px;
     object-fit: fill;
+    z-index: -1;
 }
 .item-describe > div img{
     height: 250px;
@@ -237,7 +276,7 @@
     text-indent: 15px; 
 }
 .see-more   >  div:nth-child(n + 3){
-    display: none;
+   display: none;
 }
 #see-more{
     text-align: center;
@@ -267,8 +306,9 @@
 }
 
 .bank img{
-    width: 260px;
+    width: 240px;
     height: 160px;
+    margin-top: 20px;
 }
 .bank p{
     text-align: center;
