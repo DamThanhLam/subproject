@@ -11,6 +11,7 @@
 .menu-top > p:hover,
 .menu-top > div > ion-icon:hover{
     background-color: rgb(189, 189, 189);
+   
 }
 
 .menu-top > p{
@@ -152,10 +153,17 @@
 
 .title-storage-select{
     margin: 60px 0px 30px 0px;
-    color: #A8A8A8;
+    font-weight: 700;
+    color:rgb(36, 36, 36);
 }
+.disabled{
+    color: #A8A8A8;
+    font-weight: 400;
+}
+
 .list-storage{
     margin-left: 20px;
+   
 }
 .storage{
     width: 100%;
@@ -171,6 +179,7 @@
 }
 .storage > div:first-child{
     font-size: 14px;
+    font-weight: 500;
 }
 .storage > div:last-child{
     font-size: 10px;
@@ -191,11 +200,15 @@ ul{
     width: 100%;
 }
 
-
-.title-payment{
-    color: #A8A8A8;
+.active-item{
+    color:rgb(36, 36, 36) !important; 
+    border-color:rgb(46, 46, 46) !important;
 }
 
+.selected{
+    transform: scale(1.1) ;
+    border: 2px solid #00A3FF !important;
+}
 .payment{
     width: 40%;
     height: 140px;
@@ -312,4 +325,10 @@ ul{
 }
 .bank p{
     text-align: center;
+}
+li{
+    cursor: pointer;
+}
+li *{
+    z-index: -1;
 }
