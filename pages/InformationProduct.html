@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/Responsive.css">
     <link rel="stylesheet" href="/css/InformationProduct.css">
- 
+    
     <title>Document</title>
 </head>
 <body>
@@ -36,12 +36,12 @@
             <h1>Buy iPhone 14 Pro</h1>
         </div>
         <div class="row product">
-            <div id="demo" class="c-10 col carousel slide"  data-ride="carousel">
+            <div id="demo" class="c-10 col carousel slide"  data-ride="carousel" >
                   <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
+                    
                 </ul>
                 
                 <!-- The slideshow -->
@@ -49,9 +49,7 @@
                     <div class="carousel-item active">
                         <img src="/image/InformationProduct/img-product/trong-luong-iphone-14-pro-max-xtmobile 1.png" alt="Los Angeles" >
                     </div>
-                    <div class="carousel-item">
-                        <img src="/image/InformationProduct/img-product/design_startframe__f5z6xj9zkgmu_large.jpg" alt="Chicago">
-                    </div>
+                    
                     <div class="carousel-item">
                         <img src="/image/InformationProduct/img-product/Sau-Tet-nguyen-dan-iPhone-14-Pro-Max-dong-loat-giam-gia-sau-The-pixel3.jpg" alt="New York">
                     </div>
@@ -84,15 +82,15 @@
 
             <div class="col c-3 select">
                 <p class="title-select">Pick your favorite Color:</p>
-                <ul class="color" id="color">
-                    <li id="black"></li>
-                    <li id="brown"></li>
-                    <li id="ochre"></li>
-                    <li id="purple"></li>
+                <ul class="color" id="color" >
+                    <li id="black" value="1"></li>
+                    <li id="brown" value="2"></li>
+                    <li id="ochre" value="3"></li>
+                    <li id="purple" value="4"></li>
                 </ul>
-                <p class="title-storage-select ">Storage. <span>How much space do you need?</span></p>
-                <ul id="price" class="list-storage">
-                    <li class="storage" value="128-1099">
+                <p class="title-storage-select disabled ">Storage. <span class="disabled">How much space do you need?</span></p>
+                <ul id="storage" class="list-storage ">
+                    <li class="storage" value="128-1099-45.79">
                         <div class="col c-3">
                             128GB
                         </div>
@@ -103,7 +101,8 @@
                             trade-in* <br>
                         </div>
                     </li>
-                    <li class="storage">
+
+                    <li class="storage" value="256-1199-49.95">
                         <div  class="col c-3">
                             256GB
                         </div>
@@ -115,7 +114,7 @@
                             
                         </div>
                     </li>
-                    <li class="storage" value="512-1399">
+                    <li class="storage" value="512-1399-58.29">
                         <div  class="col c-3"  >
                             512GB
                         </div>
@@ -127,7 +126,7 @@
                             
                         </div>
                     </li>
-                    <li class="storage" value="1-1599">
+                    <li class="storage" value="1-1599-66.62">
                         <div class="col c-3" >
                             1T
                         </div>
@@ -145,11 +144,12 @@
         
             
         <div class="row">
-            <div class="col c-12 title-select title-payment">
-                Payment options.<span> Select the one that works for you</span> 
+            <div id="title_pay" class="col c-12 title-select disabled">
+                Payment options.<span class="disabled"> Select the one that works for you</span> 
             </div>
 
             <ul id="pay" class="option-payment col c-10 c-o-1">
+                
                 <li class="payment" value="Buy">
                     <div>
                         <h3>Buy</h3>
@@ -168,14 +168,14 @@
 
         </div>
 
-        <div class="row payment-method">
+        <div id="payment_method" class="row payment-method">
             <div class="title-select">
                 Select a payment method.
             </div>
             <ul class="option-bank col c-12">
-                <li class="bank col c-3" value="momo"><img src="/image//InformationProduct/icon/loi-ich-vay-tien-momo-1 1.png" alt=""><p>pay with momo e-wallet.</p></li>
-                <li class="bank col c-3" value="card"><img src="/image//InformationProduct/icon/avatar1681352360126-1681352360832593104442 1.png" alt=""><p>pay with bank card.</p></li>
-                <li class="bank col c-3" value="home"><img src="/image//InformationProduct/icon/pngtree-vector-house-icon-png-image_695369 (1) 1.png" alt=""><p>Payment on delivery.</p></li>
+                <li class="bank col c-3" value="momo" data-toggle="modal"data-target="#login"  ><img src="/image//InformationProduct/icon/loi-ich-vay-tien-momo-1 1.png" alt=""><p>pay with momo e-wallet.</p></li>
+                <li class="bank col c-3" value="card" data-toggle="modal"data-target="#login" ><img src="/image//InformationProduct/icon/avatar1681352360126-1681352360832593104442 1.png" alt=""><p>pay with bank card.</p></li>
+                <li class="bank col c-3" value="home" data-toggle="modal"data-target="#login" ><img src="/image//InformationProduct/icon/pngtree-vector-house-icon-png-image_695369 (1) 1.png" alt=""><p>Payment on delivery.</p></li>
             </ul>
         </div>
 
@@ -237,12 +237,160 @@
             </div>
             <div id="see-more">
                 <p>see more</p>
-                <img src="/image/InformationProduct/icon/icon-arrow-down.png" alt="">
+                <img id="see-more-img" src="/image/InformationProduct/icon/icon-arrow-down.png" alt="">
             </div>
 
         </div>
-    </div>
 
+
+        <div id="container" class="col c-12">
+            <div class="col c-3 title-flooter">
+                <img src="/image//InformationProduct/icon/icon _apple mac_.png" alt="">
+                <img src="/image//InformationProduct/icon/icon _nav arrow right_ .png" alt="">
+                <p> Apple Store Online</p>
+            </div>
+
+            <div>
+                <div>
+                    <p>Shop and learn</p>
+                    <p>Store</p>
+                    <p>Mac</p>
+                    <p>iPad</p>
+                    <p>iPhone</p>
+                    <p>Watch</p>
+                    <p>AirPods</p>
+                    <p>Accessories</p>
+                </div>
+    
+                <div>
+                    <p>Account</p>
+                    <p>Manage Your Apple ID</p>
+                    <p>Apple Store Account</p>
+                    <p>iCloud.com</p>
+                </div>
+                <div>
+                    <p> Entertainment  </p>
+                    <p> Apple One </p>
+                    <p> Apple TV+ </p>
+                    <p> Apple Music </p>
+                    <p> Apple Arcade </p>
+                    <p> Apple Fitness+ </p>
+                    <p> Apple News+ </p>
+                    <p> Apple Podcasts </p>
+                </div>
+                <div>
+                    <p>Abount Apple</p>
+                    <p>Newsroom</p>
+                    <p>Apple Leardership</p>
+                    <p>Career Opportunities</p>
+                    <p>Investors</p>
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+
+         <!-- The Modal -->
+        <div class="modal fade" id="login">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title ">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div style="display: flex; ">
+                        <div style="width: 60%;">
+                            <form action="" style="display: flex; flex-direction: column; align-items: center; margin-top: 60px; margin-bottom: 80px;">
+
+                                <input type="text" placeholder="nguyenvana@gmail.com" style="width: 70%; height: 40px;margin: 10px; border-radius: 7px; box-shadow: 0px 0px 4px;  border: none;">
+                                <input type="password" placeholder="password"  style="width: 70%; height: 40px;margin: 10px; border-radius: 7px; box-shadow: 0px 0px 4px;  border: none;">
+                                <a href="" style="margin-left: 59%; " data-toggle="modal" data-target="#SignUp">Sign Up</a>
+                                <input type="submit" value="Sign in" style="margin-top: 30px; padding: 8px 14px; border-radius: 5px; background-color: #00A3FF; color: white; border: none;">
+                            </form>
+                        </div>
+
+                        <div style="width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: start; " >
+                            <div style="width: 50px; border-radius: 10px; width: 80%; display: flex; padding: 5px; box-shadow: 0px 0px 4px; margin: 10px; margin-top: 30px;">
+                                <img style="width: 50px; height: 50px;" src="/image/InformationProduct/icon/download (1) 1.png" alt=""><p style="padding-top: 10px; padding-left: 10px;">Login With Google</p>
+                            </div>
+                            <div  style=" width: 50px; border-radius: 10px; width: 80%; display: flex;  padding: 5px; box-shadow: 0px 0px 4px;  margin: 10px;">
+                                <img style="width: 50px; height: 50px;"src="/image/InformationProduct/icon/download (1) 1 (1).png" alt=""><p style="padding-top: 10px; padding-left: 10px;">Login With Facebook</p>
+                            </div>
+                            <div  style="width: 50px; border-radius: 10px; width: 80%; display: flex; padding: 5px; box-shadow: 0px 0px 4px;  margin: 10px;">
+                                <img style="width: 50px; height: 50px;" src="/image/InformationProduct/icon/download (1) 1 (2).png" alt=""><p style="padding-top: 10px; padding-left: 10px;">Login With SMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal footer
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div> -->
+                
+            </div>
+            </div>
+
+        </div>
+
+        <div class="modal" id="SignUp">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sign Up</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body" >
+
+                        <form action="" style=" margin:0px auto; width: 100%; display: flex; flex-direction: column; align-items: center;" >
+                            <input type="text" placeholder="Full name" style="width: 60%; height: 40px; margin: 10px; padding-left: 10px; border-radius: 10px; border: none; box-shadow: 0 0 4px;" > 
+                            <input type="date" placeholder="dd/MM/yyyy" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <div style="width: 60%; height: 40px; display: flex; justify-content: space-around; width: 40%;  margin: 10px; padding-left: 10px;">
+                                <div>
+                                    <input type="radio" name="men" >
+                                    <label for="men" style="margin-right: 40px;">Men</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="women">
+                                    <label for="women">Women</label>
+                                </div>
+                               
+                            </div> 
+                            <input type="email" placeholder="nguyenvana@gmail.com" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <input type="password" placeholder="password" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <input type="password" placeholder="confirm password" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <div style="width: 60%; height: 40px; margin-left: 100%;  margin-top: 10px ;padding-left: 10px;">
+                                <input type="radio" name="show">
+                                <label for="show">Show</label>
+                            </div>
+                          
+                            <input type="submit" value="Sign up" style="margin-top: 30px; padding: 8px 14px; border-radius: 5px; background-color: #00A3FF; color: white; border: none;">
+
+                            <div style="margin: 20px; display: flex; justify-content: space-around; width: 50%;">
+                                <img src="/image/InformationProduct/icon/Frame 34.png" alt="" style="box-shadow: 0 0 4px; border-radius: 50px; cursor: pointer;">
+                                <img src="/image/InformationProduct/icon/Frame 35.png" alt="" style="box-shadow: 0 0 4px; border-radius: 50px; cursor: pointer;">
+                                <img src="/image/InformationProduct/icon/Frame 36.png" alt="" style="box-shadow: 0 0 4px; border-radius: 50px; cursor: pointer;">
+                            </div>
+                        </form>
+
+                    </div>  
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
    
+   <script src="/js/InformationProduct.js"></script>
 </body>
 </html>
