@@ -105,3 +105,25 @@ list_pay.addEventListener("click",select_pay);
 // }
 // var option_bank = document.getElementById('option-bank');
 // option_bank.addEventListener('click',option_bank);
+
+var see_more = document.getElementById("see-more");
+var see_more_divs = document.querySelectorAll(".see-more   >  div:nth-child(n + 3)");
+var see_more_img = document.getElementById("see-more-img");
+console.log(see_more_divs);
+
+see_more.onclick = ()=>{
+  see_more_divs.forEach(div =>{
+    if (div.style.display === "none") {
+      div.style.display = "block";
+      see_more_img.src = "/image/InformationProduct/icon/icon _nav_.png";
+
+    } else {
+      div.style.display = "none";
+      see_more_img.src = "/image/InformationProduct/icon/icon-arrow-down.png";
+    }
+  })
+}
+
+window.onload = function() {
+  document.body.style.zoom = "90%";
+}

@@ -332,3 +332,44 @@ li{
 li *{
     z-index: -1;
 }
+
+#see-more *{
+    z-index: -1;
+}
+#see-more{
+    cursor: pointer;
+}
+#container > div:nth-child(2){
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  
+
+}
+
+#container > div:nth-child(1){
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+   
+}
+
+#container{
+    border-top: 1px solid black;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.title-flooter p{
+    margin-top: 12px;
+}
+.title-flooter *{
+    padding-right: 10px;
+}
+
+#container > div:nth-child(2) > div > p:first-child{
+    font-weight: 700;
+  
+
+}
