@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/Responsive.css">
+    <link rel="stylesheet" href="/css/InformationProduct.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <div class="wide grid">
+        <div class="menu-top row">
+            <p id="home" class="l-o-3 l-1 col">Home</p>
+            <p id="mac" class="l-1 col">Mac</p>
+            <p id="table" class="l-1 col">Table</p>
+            <p id="watch" class="l-1 col">Watch</p>
+            <p id="airpods" class="l-1 col">AirPods</p>
+            <p id="accessories" class="l-1 col">Accessories</p>
+            <p id="support" class="l-1 col">Support</p>
+            <div class="l-1">
+                <ion-icon id="search" name="search-outline" size="small" class="l-6"></ion-icon>
+                <ion-icon  id="cart" data-target="#login" data-toggle="modal" name="cart-outline"  size="small" class="l-6" style="background-color: #00A3FF; color: white; border-radius: 5px;"></ion-icon>
+            </div>
+        </div>
+
+        <div class="background col c-12">
+            <img class="col c-8 l-o-2" src="/image/cart/icon/pngtree-woman-with-supermarket-cart-png-image_5092357 - Copy 1.png" alt="">
+        </div>
+
+        <h2 class="title">All your orders</h2>
+
+        <div class="orders">
+            <p>Orders</p>
+            <div>
+                &bull; You have not selected any items to add to your cart
+            </div>
+        </div>
+
+        
+         <!-- The Modal -->
+         <div class="modal fade show" id="login">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title ">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div style="display: flex; ">
+                        <div style="width: 60%;">
+                            <form action="" style="display: flex; flex-direction: column; align-items: center; margin-top: 60px; margin-bottom: 80px;">
+
+                                <input type="text" placeholder="nguyenvana@gmail.com" style="width: 70%; height: 40px;margin: 10px; border-radius: 7px; box-shadow: 0px 0px 4px;  border: none;">
+                                <input type="password" placeholder="password"  style="width: 70%; height: 40px;margin: 10px; border-radius: 7px; box-shadow: 0px 0px 4px;  border: none;">
+                                <a href="" style="margin-left: 59%; " data-toggle="modal" data-target="#SignUp">Sign Up</a>
+                                <input type="submit" value="Sign in" style="margin-top: 30px; padding: 8px 14px; border-radius: 5px; background-color: #00A3FF; color: white; border: none;">
+                            </form>
+                        </div>
+
+                        <div style="width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: start; " >
+                            <div style="width: 50px; border-radius: 10px; width: 80%; display: flex; padding: 5px; box-shadow: 0px 0px 4px; margin: 10px; margin-top: 30px;">
+                                <img style="width: 50px; height: 50px;" src="/image/InformationProduct/icon/download (1) 1.png" alt=""><p style="padding-top: 10px; padding-left: 10px;">Login With Google</p>
+                            </div>
+                            <div  style=" width: 50px; border-radius: 10px; width: 80%; display: flex;  padding: 5px; box-shadow: 0px 0px 4px;  margin: 10px;">
+                                <img style="width: 50px; height: 50px;"src="/image/InformationProduct/icon/download (1) 1 (1).png" alt=""><p style="padding-top: 10px; padding-left: 10px;">Login With Facebook</p>
+                            </div>
+                            <div  style="width: 50px; border-radius: 10px; width: 80%; display: flex; padding: 5px; box-shadow: 0px 0px 4px;  margin: 10px;">
+                                <img style="width: 50px; height: 50px;" src="/image/InformationProduct/icon/download (1) 1 (2).png" alt=""><p style="padding-top: 10px; padding-left: 10px;">Login With SMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal footer
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div> -->
+                
+            </div>
+            </div>
+
+        </div>
+
+        <div class="modal " id="SignUp">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sign Up</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body" >
+
+                        <form action="" style=" margin:0px auto; width: 100%; display: flex; flex-direction: column; align-items: center;" >
+                            <input type="text" placeholder="Full name" style="width: 60%; height: 40px; margin: 10px; padding-left: 10px; border-radius: 10px; border: none; box-shadow: 0 0 4px;" > 
+                            <input type="date" placeholder="dd/MM/yyyy" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <div style="width: 60%; height: 40px; display: flex; justify-content: space-around; width: 40%;  margin: 10px; padding-left: 10px;">
+                                <div>
+                                    <input type="radio" name="men" >
+                                    <label for="men" style="margin-right: 40px;">Men</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="women">
+                                    <label for="women">Women</label>
+                                </div>
+                               
+                            </div> 
+                            <input type="email" placeholder="nguyenvana@gmail.com" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <input type="password" placeholder="password" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <input type="password" placeholder="confirm password" style="width: 60%; height: 40px;  margin: 10px; padding-left: 10px;  border-radius: 10px; border: none; box-shadow: 0 0 4px;">
+                            <div style="width: 60%; height: 40px; margin-left: 100%;  margin-top: 10px ;padding-left: 10px;">
+                                <input type="radio" name="show">
+                                <label for="show">Show</label>
+                            </div>
+                          
+                            <input type="submit" value="Sign up" style="margin-top: 30px; padding: 8px 14px; border-radius: 5px; background-color: #00A3FF; color: white; border: none;">
+
+                            <div style="margin: 20px; display: flex; justify-content: space-around; width: 50%;">
+                                <img src="/image/InformationProduct/icon/Frame 34.png" alt="" style="box-shadow: 0 0 4px; border-radius: 50px; cursor: pointer;">
+                                <img src="/image/InformationProduct/icon/Frame 35.png" alt="" style="box-shadow: 0 0 4px; border-radius: 50px; cursor: pointer;">
+                                <img src="/image/InformationProduct/icon/Frame 36.png" alt="" style="box-shadow: 0 0 4px; border-radius: 50px; cursor: pointer;">
+                            </div>
+                        </form>
+
+                    </div>  
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    zoom: 90%;
+    margin: 0px auto;
+}
+.title{
+    text-align: center;
+    margin: 50px 0px 0px 30px;
+    font-weight: 700;
+}
+.orders{
+    margin-top: 50px;
+}
+.orders > p:first-child{
+    color: #888888;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.orders > div:nth-child(2){
+    margin-left: 30px;
+    margin-top: 40px;
+    color: red;
+    font-size: 19px;
+    font-weight: 600;
+}
