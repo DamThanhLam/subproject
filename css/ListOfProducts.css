@@ -123,17 +123,14 @@ a{
   }
 
 
-  .main {
+.main {
     margin-top: 2rem;
   }
-
-
   .fade > img {
     height: 405px;
     width: 100%;
     object-fit: cover;
   }
-
   .content-img {
     margin-top: 7rem;
     display: flex;
@@ -142,43 +139,36 @@ a{
     gap: 5rem;
     flex-wrap: wrap;
   }
-
-  .text-img {
+.text-img {
     display: flex;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
   }
-.padding-left-240{
-  padding-left: 240px;
+  .padding-left-240{
+    padding-left: 240px;
+  }
+    .font-size-24 {
+      font-size: 24px;
+      margin-top: 4rem;
+    }
+    .fz-bold {
+      font-weight: 700;
 }
-  .font-size-24 {
-    font-size: 24px;
-    margin-top: 4rem;
-  }
-  .fz-bold {
-    font-weight: 700;
-  }
 
-  .content-products {
-    display: flex;
-    gap: 2rem;
-    justify-content: flex-end;
-    margin-top: 3rem;
-  }
-  .container-products{
-    position: relative;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  .container-products:hover{
-    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.51));
-  }
-  .container-products img{
-    width: 288px;
-    height: 400px;
-  }
-  .container-products-title{
+
+
+
+
+
+
+
+
+
+
+
+
+.container-products-title{
     position: absolute;
     width: 80%;
     height: 18px;
@@ -206,156 +196,6 @@ a{
 
   color: #000000;
 }
-.container-btn-Next{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 31px;
-  top: 170px;
-
-  background: rgba(0, 0, 0, 0.28);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
-}
-#next-button{
-  position: absolute;
-  box-sizing: border-box;
-
-  position: absolute;
-  left: 27.08%;
-  right: 27.08%;
-  top: 4.17%;
-  bottom: 4.17%;
-
-  border: 4px solid #FFFFFF;
-}
-  .content-products  img {
-    box-shadow: 5px 5px 10px 2px #888888;
-  }
-
-.Accessories-content{
-  position: absolute;
-  width: 1440px;
-  height: 706px;
-  left: 0px;
-  top: 1270px;
-}
-.frame10{
-  position: absolute;
-  width: 350px;
-  height: 435px;
-  left: 301px;
-  top: 135px;
-
-  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.33));
-}
-
-
-.item-Accessories-content{
-  position: absolute;
-  width: 260px;
-  height: 435px;
-  left: 988px;
-  top: 135px;
-
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-}
-.item-Accessories-content img{
-  width: 172px;
-  height: 239px;
-
-
-  border-radius: 20px;
-}
-.container-products_img{
-  text-align: center;
-}
-.cond-text-item{
-  position: absolute;
-  width: 33px;
-  height: 18px;
-  left: 25px;
-  top: 220px;
-  font-size: 15px;
-  color: #FF0000;
-}
-.price-text-item{
-  position: absolute;
-  width: 51px;
-  height: 18px;
-  left: 25px;
-  bottom: 10px;
-  font-size: 18px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-
-  color: #000000;
-
-}
-.title-text-item{
-  position: absolute;
-  width: 235px;
-  height: 36px;
-  left: 25px;
-  top: 260px;
-
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-
-  color: #000000;
-
-}
-.color-text-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 20px;
-  gap: 15px;
-  position: absolute;
-  width: 139px;
-  height: 22px;
-  left: 55px;
-  top: 180px;
-}
-.color-text-item span{
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-}
-.nextbtn{
-  position: relative;
-  width: 40px;
-  height: 40px;
-  left: 0px;
-  top: 175px;
-  cursor: pointer;
-  background: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
-  padding-top: 5px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  transform: 0.5s ease;
-}
-.nextbtn:hover{
-  background-color: white;
-  color: black;
-}
-
-
-
-
-
-
 .content-end {
     margin-top: 4rem;
     display: flex;
@@ -413,36 +253,4 @@ a{
 .content-end div:hover{
   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.51));
 }
-
-/*  Tablet  */
-/* @media (min-width:740px) and (max-width: 1440x) {
   
-} */
-/*  Mobile  */
-@media (max-width: 740px){
-  .content-end{
-    flex-direction: column;
-    gap:4rem;
-  }
-  .header{
-    flex-direction: column;
-    justify-items: center;
-    justify-content: space-between;
-    gap: 0px;
-  }
-  .content-img{
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .font-size-24{
-    font-size: 18px;
-  }
-  .padding-left-240{
-    padding-left: 80px;
-
-  }
-  .container{
-    max-width: 740px;
-  }
-
-}
