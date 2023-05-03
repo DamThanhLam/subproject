@@ -146,7 +146,7 @@ a{
     cursor: pointer;
   }
   .padding-left-240{
-    padding-left: 240px;
+    padding-left: 2rem;
   }
     .font-size-24 {
       font-size: 24px;
@@ -154,19 +154,7 @@ a{
     }
     .fz-bold {
       font-weight: 700;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
 .container-products-title{
     position: absolute;
@@ -196,8 +184,128 @@ a{
 
   color: #000000;
 }
+
+
+/*-------- products list -------- */
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:40px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  overflow-x: auto;
+}
+.list::-webkit-scrollbar{
+  width: 0;
+  background-color: transparent;
+}
+.card-container{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+  padding: 15px auto 5px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #F5D7DB;
+  transition: 1.0s ease;
+  background-color: #F2F2F2;
+  
+}
+.intro-card:hover,.card-container:hover{
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.title-Accessories, .title_text{
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  padding:  20px;
+}
+.color_container{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top: 10px;
+}
+#dot-color{
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+.price-Mac{
+  width: 225px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+}
+.btn-Buy{
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: .3s linear;
+}
+.btn-Buy:hover{
+  color: white;
+  background-color: #00A3FF;
+}
+
+/*--------Accessories for Mac--------*/
+
+.intro-card{
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #F5D7DB;
+  transition: 1.0s ease;
+}
+.intro-card img{
+  border-radius: 10px;
+}
+.title-intro{
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-weight: 700;
+  font-size: 22px;
+}
+.contain-img{
+  padding: 15px;
+}
+.contain-img img{
+  width: 260px;
+  height: 260px;
+}
+#card-container2{
+  background-color: white;
+  width: auto;
+  height: 435px;
+}
+.price-Accessories{
+  position: absolute;
+  bottom: 10px;
+  color: red;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/* contend-end */
 .content-end {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -205,15 +313,20 @@ a{
 
 .content-end__left {
     position: relative;
-    border: 1px solid gray;
-    box-shadow: 5px 5px 10px 2px #888888;
+    border: 2px solid #F5D7DB;
     cursor: pointer;
+    border-radius: 15px;
+    
 }
-
+.content-end__left div{
+  transition: 0.3s linear;
+}
 .content-end__left img {
     border-radius: 15px;
 }
-  
+.content-end__left:hover{
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2)
+}
 .content-end__right {
     position: relative;
     cursor: pointer;
@@ -223,10 +336,17 @@ a{
     flex-direction: column;
     gap: 22px;
 }
+.content-end__right >div{
+  border-radius: 20px;
+  border: 2px solid #F5D7DB;
+  transition: 1.0s ease;
+}
+.content-end__right >div:hover{
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2)
+}
 .text-above-content-end__right{
   position: absolute;
   width: 331px;
-  height: 58px;
   left: 35px;
   top: 50px;
 
@@ -240,7 +360,6 @@ a{
 .text-down-content-end__right{
   position: absolute;
   width: 233px;
-  height: 103px;
   left: 40px;
   top: 71px;
   font-weight: 700;
@@ -248,11 +367,8 @@ a{
   line-height: 29px;
   display: flex;
   align-items: center;
+}
 
-}
-.content-end div div:hover{
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.51));
-}
 
 
 /*--------------   FOOTER   ---------------*/
@@ -301,8 +417,44 @@ a{
 .category p{
   cursor: pointer;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .category p:hover{
   text-decoration: underline;
+}
+
+
+
+/*  Tablet  */
+/* @media (min-width:740px) and (max-width: 1440x) {
+  
+} */
+/*  Mobile  */
+@media (max-width: 740px){
+  .content-end{
+    flex-direction: column;
+    gap:4rem;
+  }
+  .header{
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .content-img{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .font-size-24{
+    font-size: 18px;
+  }
+  .padding-left-240{
+    padding-left: 80px;
+
+  }
+  .container{
+    max-width: 740px;
+  }
+
 }
