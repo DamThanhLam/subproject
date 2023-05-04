@@ -20,6 +20,13 @@
     gap: 0px;
     flex-wrap: wrap;
 }
+
+.active-item{
+  background-color: #00A3FF;
+  color: white;
+  font-weight: 600;
+}
+
 a{
   text-decoration: none;
 }
@@ -148,8 +155,21 @@ a{
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px  5px rgb(75, 75, 75);
+  }
+  .text-img *{
+    z-index: -1;
   }
 
+  .text-img:hover{
+    background-color:  #00000024;
+   
+  }
+.click-item{
+    background-color: #00a2ff54;
+  }
 
 
 .padding-left-240{
@@ -490,4 +510,8 @@ align-items: center;
     max-width: 740px;
   }
 
+}
+
+#list-mac{
+  display: none;
 }

@@ -8,23 +8,30 @@
     font-size: 12px;
 }
 
-.menu-top > p:hover,
+.menu-top > a:hover,
 .menu-top > div > ion-icon:hover{
     background-color: rgb(189, 189, 189);
-   
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
-
-.menu-top > p{
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu-top  a{
     max-width: 6%;
     text-align: center;
     padding: 1% 0px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 .menu-top > div{
     display: flex;
 }   
-.menu-top > div > ion-icon{
+.menu-top > div >ion-icon{
     padding: 10% 0px;
-    margin: 0px 0px 16px;
+    border-radius: 10px;   
 }
 
 .title > p{

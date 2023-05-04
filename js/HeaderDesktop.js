@@ -25,3 +25,18 @@ let slideIndex = 1;
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
           }
+
+var selectedItem = null;
+function clickItem(event){
+  console.log(event.target);
+  if(selectedItem !== null){
+    selectedItem.classList.remove("click-item");
+  }
+  event.target.classList.add("click-item");
+  selectedItem = event.target;
+  console.log(event.target.getAttribute('value'));
+  if(event.target.getAttribute('value') === '1'){
+    document.getElementById('list-product-new').style ="display:none;";
+    document.getElementById('list-mac').style = 'display:block;';
+  }
+}

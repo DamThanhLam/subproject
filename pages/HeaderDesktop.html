@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Desktop</title>
+    <link rel="stylesheet" href="/css/ListOfProducts.css">
     <link rel="stylesheet" href="/css/HeaderDesktop.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -14,7 +15,7 @@
 </head>
 <body>
     <header class =" header container">
-      <a href="HeaderDesktop.html"> <div class="icons">Home</div></a>
+      <a href="HeaderDesktop.html"> <div class="icons active-item">Home</div></a>
         <div class="icons">Mac</div>
         <div class="icons">Tablet</div>
         <div class="icons">Watch</div>
@@ -65,264 +66,552 @@
               </div>
 
             <div class="content-img">
-                <div class="text-img">
-                  <img src="/image/HeaderDesktop/Mac-card.jpg" alt="">
-                  <span class ="name-img">Mac</span>
-                </div>
-                <div class="text-img">
+                  <div class="text-img" value="1" onclick="clickItem(event)">
+                    <img src="/image/HeaderDesktop/Mac-card.jpg" alt="">
+                    <span class ="name-img">Mac</span>
+                  </div>
+                <div class="text-img"  onclick="clickItem(event)">
                     <img src="/image/HeaderDesktop/AirPods-card.jpg" alt="">
                     <span class ="name-img">AirPods</span>
                 </div>
-                <div class="text-img">
+                <div class="text-img"  onclick="clickItem(event)">
                     <img src="/image/HeaderDesktop/Tablet-card.jpg" alt="">
                     <span class ="name-img">Tablet</span>
                 </div>
-                <div class="text-img">
-                    <img src="/image/HeaderDesktop/Watch-card.jpg"" alt="">
+                <div class="text-img"  onclick="clickItem(event)">
+                    <img src="/image/HeaderDesktop/Watch-card.jpg" alt="">
                     <span class ="name-img">Watch</span>
                 </div>
-                <div class="text-img">
+                <div class="text-img"  onclick="clickItem(event)">
                     <img src="/image/HeaderDesktop/Accessories-card.jpg" alt="">
                     <span class ="name-img">Accessories</span>
                 </div>
             </div>
 
-            <p class = "padding-left-240 font-size-24">
+            <div id="list-product-new">
+
+              <p class = "padding-left-240 font-size-24">
                 <span class = "font-size-24 fz-bold">The lasted.</span>
                 Take a look at what's new, right now.
-            </p>
+              </p>
               <!--Product-->
 
 
-            <div class="content-products">
+                <div class="content-products">
 
-              <a href="InformationProduct.html">
-                <div class="container-products">
-                  <div><img src="/image/HeaderDesktop/store-card-40-iphone-14-pro-202303 1.jpg" alt="" style="width: auto;"></div>
-                  <div class="container-products-title">
-                    IPHONE 14 PRO
+                  <a href="InformationProduct.html">
+                    <div class="container-products">
+                      <div><img src="/image/HeaderDesktop/store-card-40-iphone-14-pro-202303 1.jpg" alt="" style="width: auto;"></div>
+                      <div class="container-products-title">
+                        IPHONE 14 PRO
+                      </div>
+                      <div class="container-products-description" style="color: white;">
+                        From $999 or $41.62/mo. for 24 mo
+                      </div>
+                    </div>
+                  </a>
+
+                  <div class="container-products">
+                    <div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-homepod-202301?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1670389217441" alt="" style="width: auto;"></div>
+                    <div class="container-products-title">
+                      HOMEPOD
+                    </div>
+                    <div class="container-products-description" style="color: white;">
+                      From $799 or $39.58/mo. for 12 mo.
+                    </div>
                   </div>
-                  <div class="container-products-description" style="color: white;">
-                    From $999 or $41.62/mo. for 24 mo
+
+                  <div class="container-products">
+                    <div><img src="/image/HeaderDesktop/store-card-40-macbook-pro-202301 1.jpg" alt="" style="width: auto;"></div>
+                    <div class="container-products-title">
+                      MACBOOK PRO 14” AND 16”
+                    </div>
+                    <div class="container-products-description" style="color: white;">
+                      From $1999 or $166.58/mo. for 12 mo.
+                    </div>
+                  </div>
+
+                  <div class="container-products">
+                    <div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-mac-mini-202301?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1670448669900" alt="" style="width: auto;"></div>
+                    <div class="container-products-title">
+                      MAC MINI
+                    </div>
+                    <div class="container-products-description" style="color: white;">
+                      From $599 or $49.5/mo. for 12 mo.
+                    </div>
+                  </div>
+
+                  <div class="container-products">
+                    <div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-pro-202210?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1667423474414" alt="" style="width: auto;"></div>
+                    <div class="container-products-title">
+                      IPAD PRO
+                    </div>
+                    <div class="container-products-description" style="color: white;">
+                      From $799 or $66.58/mo. for 12 mo.
+                    </div>
+                  </div>
+
+                  <div class="container-products">
+                    <div><img src="/image/HeaderDesktop/store-card-40-ipad-202210 1.jpg" alt="" style="width: auto;"></div>
+                    <div class="container-products-title" style="color: black;">
+                      IPAD
+                    </div>
+                    <div class="container-products-description">
+                      From $499 or $37.41/mo for 12 mo.
+                    </div>
+                  </div>
+                  <div class="container-products">
+                    <div><img src="/image/HeaderDesktop/store-card-40-watch-ultra-202209 1.jpg" alt="" style="width: auto;"></div>
+                    <div class="container-products-title" style="color: black;">
+                      APPLE WATCH ULTRA
+                    </div>
+                    <div class="container-products-description">
+                      From $799 or $33.29/mo for 12 mo.
+                    </div>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+                <!--End Products-->
+                <p class = "padding-left-240 font-size-24">
+                  <span class = "font-size-24 fz-bold">Accessories.</span>
+                  Essentials that pair perfectly with you favorite devices.
+                </p>
+                <!--Accessories-->
+              <div class="content-products" >
+
+                <div class="container-products">
+                  <div>
+                    <img src="/image/HeaderDesktop/store-card-40-accessories-202303 1.png" alt="" style=" border-radius: 40px;">
+                  </div>
+                  <div class="container-products-title" style="color: black; font-size: 20px;font-weight: 700;">
+                    In with the new
+                  </div>
+                  <div class="container-products-description" style="color: black;font-size: 15px;margin-top: 10px;">
+                    Discover fresh new colors for your favorite accessories.
+                  </div>
+                </div>
+
+                <div id="w200px" class="container-products" style="height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;">
+                  <div id="container-products_img">
+                    <img src="/image/HeaderDesktop/yellow_iphone.png" alt="">
+                  </div>
+                  <div class="color-text-item">
+                    <span style="background-color: yellow;"></span>
+                    <span style="background-color: black;"></span>
+                    <span style="background-color: grey;"></span>
+                    <span style="background-color: red;"></span>
+                  </div>
+                  <div class="cond-text-item">
+                    New
+                  </div>
+                  <div class="title-text-item">
+                    iPhone 14 Silicone Case with MagSafe - Canary Yello
+                  </div>
+                  <div class="price-text-item">
+                    $49,00
+                  </div>
+                </div>
+
+                <div id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;">
+                  <div id="container-products_img">
+                    <img src="/image/HeaderDesktop/black_iphone.png" alt="" >
+                  </div>
+                  <div class="color-text-item">
+                    <span style="background-color: black;"></span>
+                    <span style="background-color: blue;"></span>
+                    <span style="background-color: orange;"></span>
+                    <span style="background-color: red;"></span>
+                  </div>
+                  <div class="cond-text-item">
+                    New
+                  </div>
+                  <div class="title-text-item">
+                    iPhone 14 Pro Leather Case with MagSafe - lnk
+                  </div>
+                  <div class="price-text-item">
+                    $59,00
+                  </div>
+                </div>
+
+                <div id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;">
+                  <div id="container-products_img">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQUJ3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1676653833122" alt="">
+                  </div>
+                  <div class="color-text-item">
+                    <span style="background-color: #ADC0D1;"></span>
+                    <span style="background-color: blue;"></span>
+                    <span style="background-color: black;"></span>
+                  </div>
+                  <div class="cond-text-item">
+                    New
+                  </div>
+                  <div class="title-text-item">
+                    iPhone 14 Pro Leather Case with  MagSafe - lnk
+                  </div>
+                  <div class="price-text-item">
+                    $59,00
+                  </div>
+                </div>
+                
+                <div id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;">
+                  <div id="container-products_img">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPPX3?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1661458144539" alt="">
+                  </div>
+                  <div class="color-text-item">
+                    <span style="background-color: #763728 ;"></span>
+                    <span style="background-color: aqua;"></span>
+                    <span style="background-color: purple;"></span>
+                    <span style="background-color: red;"></span>
+                  </div>
+                  <div class="cond-text-item">
+                    New
+                  </div>
+                  <div class="title-text-item">
+                    iPhone Leather Wallet with MagSafe - Umber
+                  </div>
+                  <div class="price-text-item">
+                    $59,00
+                  </div>
+                </div>
+
+                <di id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;">
+                  <div id="container-products_img">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPPQ3?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1660952680337" alt="">
+                  </div>
+                  <div class="color-text-item">
+                    <span style="background-color: #763728;"></span>
+                    <span style="background-color: black;"></span>
+                    <span style="background-color: grey;"></span>
+                  </div>
+                  <div class="cond-text-item">
+                    New
+                  </div>
+                  <div class="title-text-item">
+                    iPhone 14 Plus Silicone Case with MagSafe - Sky
+                  </div>
+                  <div class="price-text-item">
+                    $59,00
+                  </div>
+                </di>
+
+                <di id="w200px"  class="container-products" style="width: 300x;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;">
+                  <div id="container-products_img">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPU13_AV1?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1678830664321" alt="">
+                  </div>
+                  <div class="color-text-item">
+                    <span style="background-color: black;"></span>
+                    <span style="background-color: pink;"></span>
+                    <span style="background-color: orange;"></span>
+                  </div>
+                  <div class="cond-text-item">
+                    New
+                  </div>
+                  <div class="title-text-item">
+                    iPhone 14 Clear Case with MagSafe
+                  </div>
+                  <div class="price-text-item">
+                    $49,00
+                  </div>
+                </di>
+
+              </div>
+            </div>
+
+
+            <div id="list-mac">
+              <p class = "padding-left-240 font-size-24">
+                <span class = "font-size-24 fz-bold">All models.</span>
+             </p>
+    
+              <!--All models-->
+              <div class="list">  
+                
+                  <a href="InformationProduct.html">
+                    <div class="card-container">
+                      <div class="title_text">
+                        MacBook Air with M1 chip
+                      </div>
+                      <img src="/image/ListOfProducts/mac-card-40-macbook-air-202110 1.png" alt="">
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: yellow;"></span>
+                      <span id="dot-color" style="background-color: black;"></span>
+                      <span id="dot-color" style="background-color: gray;"></span>
+                      <span id="dot-color" style="background-color: red;"></span>
+                    </div>
+                    <div class="price-Mac">
+                      - From $999or $83.25/mo. for 12 mo.
+                    </div>
+                    <div class="btn-Buy">
+                      Buy
+                    </div>
+                  </div>
+                  </a>
+                <a href="InformationProduct.html">
+                  <div class="card-container">
+                    <div class="title_text">
+                      MacBook Air with M2 chip
+                    </div>
+                    <img src="/image/ListOfProducts/mac-card-40-macbook-air-202206 1.png" alt="">
+                  <div class="color_container">
+                    <span id="dot-color" style="background-color: black;"></span>
+                    <span id="dot-color" style="background-color: gray;"></span>
+                    <span id="dot-color" style="background-color: red;"></span>
+                  </div>
+                  <div class="price-Mac">
+                    - From $1199or $99.91/mo. for 12 mo.
+                  </div>
+                  <div class="btn-Buy">
+                    Buy
+                  </div>
+                </div>
+                </a>
+                <a href="InformationProduct.html">
+                  <div class="card-container">
+                    <div class="title_text">
+                      MacBook Pro 13”
+                    </div>
+                    <img src="/image/ListOfProducts/mac-card-40-macbook-pro-13-202206 1.png" alt="">
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: #F68961;"></span>
+                      <span id="dot-color" style="background-color: black;"></span>
+                      <span id="dot-color" style="background-color: pink;"></span>
+                  </div>
+                    <div class="price-Mac">
+                      - From $1299or $108.25/mo. for 12 mo.
+                    </div>
+                    <div class="btn-Buy">
+                      Buy
+                  </div>
+                  </div>
+                </a>
+              <a href="InformationProduct.html">
+                <div class="card-container">
+                  <div class="title_text">
+                    MacBook Pro 14” and 16”
+                  </div>
+                    <img src="/image/ListOfProducts/mac-card-40-macbook-pro-13-202206 1 (1).png" alt="">
+                  <div class="color_container">
+                    <span id="dot-color" style="background-color: black;"></span>
+                  </div>
+                  <div class="price-Mac">
+                    - From $19  99 or $166.58/mo. for 12 mo.
+                  </div>
+                  <div class="btn-Buy">
+                    Buy
                   </div>
                 </div>
               </a>
 
-              <div class="container-products">
-                <div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-homepod-202301?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1670389217441" alt="" style="width: auto;"></div>
-                <div class="container-products-title">
-                  HOMEPOD
+              <a href="InformationProduct.html">
+                <div class="card-container">
+                  <div class="title_text">
+                    Mac mini
+                  </div>
+                  <img src="/image/ListOfProducts/Mac-mini2.png" alt="">
+                <div class="color_container">
+                  <span id="dot-color" style="background-color: black;"></span>
+                  <span id="dot-color" style="background-color: gray;"></span>
                 </div>
-                <div class="container-products-description" style="color: white;">
-                  From $799 or $39.58/mo. for 12 mo.
+                <div class="price-Mac">
+                  - From $599or $49.25/mo. for 12 mo.
+                </div>
+                <div class="btn-Buy">
+                  Buy
                 </div>
               </div>
+              </a>
 
-              <div class="container-products">
-                <div><img src="/image/HeaderDesktop/store-card-40-macbook-pro-202301 1.jpg" alt="" style="width: auto;"></div>
-                <div class="container-products-title">
-                  MACBOOK PRO 14” AND 16”
+              <a href="InformationProduct.html">
+                <div class="card-container">
+                  <div class="title_text">
+                    iMac 24”
+                  </div>
+                  <img src="/image/ListOfProducts/Mac 24'2'.png" alt="">
+                <div class="color_container">
+                  <span id="dot-color" style="background-color: pink;"></span>
+                  <span id="dot-color" style="background-color: black;"></span>
+                  <span id="dot-color" style="background-color: gray;"></span>
+                  <span id="dot-color" style="background-color: aquamarine;"></span>
                 </div>
-                <div class="container-products-description" style="color: white;">
-                  From $1999 or $166.58/mo. for 12 mo.
+                <div class="price-Mac">
+                  - From $1299or $129.25/mo. for 12 mo.
+                </div>
+                <div class="btn-Buy">
+                  Buy
                 </div>
               </div>
+              </a>
 
-              <div class="container-products">
-                <div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-mac-mini-202301?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1670448669900" alt="" style="width: auto;"></div>
-                <div class="container-products-title">
-                  MAC MINI
+              <a href="InformationProduct.html">
+                <div class="card-container">
+                  <div class="title_text">
+                    MacBook Pro
+                  </div>
+                  <img src="/image/ListOfProducts/Mac-Pro2.png" alt="">
+                <div class="color_container">
+                  <span id="dot-color" style="background-color: black;"></span>
+                  <span id="dot-color" style="background-color: gray;"></span>
                 </div>
-                <div class="container-products-description" style="color: white;">
-                  From $599 or $49.5/mo. for 12 mo.
+                <div class="price-Mac">
+                  - From $5999or $499.91/mo. for 12 mo.
                 </div>
-              </div>
-
-              <div class="container-products">
-                <div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-pro-202210?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1667423474414" alt="" style="width: auto;"></div>
-                <div class="container-products-title">
-                  IPAD PRO
-                </div>
-                <div class="container-products-description" style="color: white;">
-                  From $799 or $66.58/mo. for 12 mo.
+                <div class="btn-Buy">
+                  Buy
                 </div>
               </div>
-
-              <div class="container-products">
-                <div><img src="/image/HeaderDesktop/store-card-40-ipad-202210 1.jpg" alt="" style="width: auto;"></div>
-                <div class="container-products-title" style="color: black;">
-                  IPAD
-                </div>
-                <div class="container-products-description">
-                  From $499 or $37.41/mo for 12 mo.
-                </div>
-              </div>
-              <div class="container-products">
-                <div><img src="/image/HeaderDesktop/store-card-40-watch-ultra-202209 1.jpg" alt="" style="width: auto;"></div>
-                <div class="container-products-title" style="color: black;">
-                  APPLE WATCH ULTRA
-                </div>
-                <div class="container-products-description">
-                  From $799 or $33.29/mo for 12 mo.
-                </div>
-                
-                
-              </div>
-              
-              
-              
-              
+              </a>
             </div>
-            <!--End Products-->
-            <p class = "padding-left-240 font-size-24">
-              <span class = "font-size-24 fz-bold">Accessories.</span>
-              Essentials that pair perfectly with you favorite devices.
-            </p>
-            <!--Accessories-->
-          <div class="content-products" >
+                  
 
-            <div class="container-products">
-              <div>
-                <img src="/image/HeaderDesktop/store-card-40-accessories-202303 1.png" alt="" style=" border-radius: 40px;">
-              </div>
-              <div class="container-products-title" style="color: black; font-size: 20px;font-weight: 700;">
-                In with the new
-              </div>
-              <div class="container-products-description" style="color: black;font-size: 15px;margin-top: 10px;">
-                Discover fresh new colors for your favorite accessories.
-              </div>
-            </div>
+                  
 
-            <div id="w200px" class="container-products" style="height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;">
-              <div id="container-products_img">
-                <img src="/image/HeaderDesktop/yellow_iphone.png" alt="">
-              </div>
-              <div class="color-text-item">
-                <span style="background-color: yellow;"></span>
-                <span style="background-color: black;"></span>
-                <span style="background-color: grey;"></span>
-                <span style="background-color: red;"></span>
-              </div>
-              <div class="cond-text-item">
-                New
-              </div>
-              <div class="title-text-item">
-                iPhone 14 Silicone Case with MagSafe - Canary Yello
-              </div>
-              <div class="price-text-item">
-                $49,00
-              </div>
-            </div>
+              <p class = "padding-left-240 font-size-24">
+                  <span class = "font-size-24 fz-bold">Accessories.</span>
+                  <span style="color: gray;">Made    for Mac</span>.
+              </p>
+              <!--Accessories for Mac-->
+              <div class="list">
+                  <div class="intro-card">
+                    <img src="/image/ListOfProducts/store-card-40-accessories-202303 1 (2).png" alt="">
+                    <div class="title-intro">The best Mac accessories for you</div>
+                  </div>
 
-            <div id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;">
-              <div id="container-products_img">
-                <img src="/image/HeaderDesktop/black_iphone.png" alt="" >
-              </div>
-              <div class="color-text-item">
-                <span style="background-color: black;"></span>
-                <span style="background-color: blue;"></span>
-                <span style="background-color: orange;"></span>
-                <span style="background-color: red;"></span>
-              </div>
-              <div class="cond-text-item">
-                New
-              </div>
-              <div class="title-text-item">
-                iPhone 14 Pro Leather Case with MagSafe - lnk
-              </div>
-              <div class="price-text-item">
-                $59,00
-              </div>
-            </div>
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="/image/ListOfProducts/mouse.png" alt="">
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: black;"></span>
+                      <span id="dot-color" style="background-color: gray;"></span>
+                      <span id="dot-color" style="background-color: red;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      Mouse Bluetooth
+                    </div>
+                    <div class="price-Accessories">
+                      $49.00
+                    </div>
+                  </div>
 
-            <div id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;">
-              <div id="container-products_img">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQUJ3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1676653833122" alt="">
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="/image/ListOfProducts/keyboard.png" alt="" >
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: black;"></span>
+                      <span id="dot-color" style="background-color: gray;"></span>
+                      <span id="dot-color" style="background-color: blue  ;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      Keyboard Bluetooth
+                    </div>
+                    <div class="price-Accessories">
+                      $99.00
+                    </div>
+                  </div>
+
+
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="/image/ListOfProducts/Cable.png" alt="" >
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: white;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      USB-C Charge Cable
+                    </div>
+                    <div class="price-Accessories">
+                      $59.00
+                    </div>
+                  </div>
+
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="/image/ListOfProducts/trackpad.png" alt="" >
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: black;"></span>
+                      <span id="dot-color" style="background-color: gray;"></span>
+                      <span id="dot-color" style="background-color: pink;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      Magic Trackpad - Black Multi-Touch Surface
+                    </div>
+                    <div class="price-Accessories">
+                      $149.00
+                    </div>
+                  </div>
+
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="/image/ListOfProducts/keyboard2.png" alt="" >
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: peachpuff;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      keyboard US English
+                    </div>
+                    <div class="price-Accessories">
+                      $149.00
+                    </div>
+                  </div>
+
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MJ1M2?wid=532&hei=582&fmt=png-alpha&.v=1591650473000" alt="" >
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: peachpuff;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      USB-C to USB adapter
+                    </div>
+                    <div class="price-Accessories">
+                      $14.00
+                    </div>
+                  </div>
+
+                  <div id="card-container2" class="card-container" >
+                    <div class="contain-img">
+                      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HP8C2?wid=532&hei=582&fmt=png-alpha&.v=1596135472000" alt="" >
+                    </div>
+                    
+                    <div class="color_container">
+                      <span id="dot-color" style="background-color: black;"></span>
+                      <span id="dot-color" style="background-color: pink;"></span>
+                    </div>
+                    <div class="title-Accessories">
+                      Twelve South Curve Stand for MacBook
+                    </div>
+                    <div class="price-Accessories">
+                      $59.95  
+                    </div>
+                  </div>
+
               </div>
-              <div class="color-text-item">
-                <span style="background-color: #ADC0D1;"></span>
-                <span style="background-color: blue;"></span>
-                <span style="background-color: black;"></span>
-              </div>
-              <div class="cond-text-item">
-                New
-              </div>
-              <div class="title-text-item">
-                iPhone 14 Pro Leather Case with  MagSafe - lnk
-              </div>
-              <div class="price-text-item">
-                $59,00
-              </div>
+
+              
             </div>
             
-            <div id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;">
-              <div id="container-products_img">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPPX3?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1661458144539" alt="">
-              </div>
-              <div class="color-text-item">
-                <span style="background-color: #763728 ;"></span>
-                <span style="background-color: aqua;"></span>
-                <span style="background-color: purple;"></span>
-                <span style="background-color: red;"></span>
-              </div>
-              <div class="cond-text-item">
-                New
-              </div>
-              <div class="title-text-item">
-                iPhone Leather Wallet with MagSafe - Umber
-              </div>
-              <div class="price-text-item">
-                $59,00
-              </div>
-            </div>
-
-            <di id="w200px" class="container-products" style="width: 520px;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;">
-              <div id="container-products_img">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPPQ3?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1660952680337" alt="">
-              </div>
-              <div class="color-text-item">
-                <span style="background-color: #763728;"></span>
-                <span style="background-color: black;"></span>
-                <span style="background-color: grey;"></span>
-              </div>
-              <div class="cond-text-item">
-                New
-              </div>
-              <div class="title-text-item">
-                iPhone 14 Plus Silicone Case with MagSafe - Sky
-              </div>
-              <div class="price-text-item">
-                $59,00
-              </div>
-            </di>
-
-            <di id="w200px"  class="container-products" style="width: 300x;height: 400px;border: 1px gray ;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 5px;">
-              <div id="container-products_img">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPU13_AV1?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1678830664321" alt="">
-              </div>
-              <div class="color-text-item">
-                <span style="background-color: black;"></span>
-                <span style="background-color: pink;"></span>
-                <span style="background-color: orange;"></span>
-              </div>
-              <div class="cond-text-item">
-                New
-              </div>
-              <div class="title-text-item">
-                iPhone 14 Clear Case with MagSafe
-              </div>
-              <div class="price-text-item">
-                $49,00
-              </div>
-            </di>
-
-          </div>
           <!--END Accessories-->
         
 

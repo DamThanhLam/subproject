@@ -18,16 +18,18 @@
 <body>
     <div class="wide grid">
         <div class="menu-top row">
-            <p id="home" class="l-o-3 l-1 col">Home</p>
-            <p id="mac" class="l-1 col">Mac</p>
-            <p id="table" class="l-1 col">Table</p>
-            <p id="watch" class="l-1 col">Watch</p>
-            <p id="airpods" class="l-1 col">AirPods</p>
-            <p id="accessories" class="l-1 col">Accessories</p>
-            <p id="support" class="l-1 col">Support</p>
-            <div class="l-1">
-                <ion-icon id="search" name="search-outline" size="small" class="l-6"></ion-icon>
-                <ion-icon  id="cart" data-target="#login" data-toggle="modal" name="cart-outline"  size="small" class="l-6" style="background-color: #00A3FF; color: white; border-radius: 5px;"></ion-icon>
+            <a  class="l-o-3 l-1" href="HeaderDesktop.html">Home</a>
+            <a  class=" l-1 " href="">Mac</a>
+            <a  class="l-1 " href="">Table</a>
+            <a  class="l-1 " href="">Watch</a>
+            <a  class="l-1 " href="">AirPods</a>
+            <a  class="l-1 " href="">Accessories</a>
+            <a  class=" l-1 " href="">Support</a>
+            <div class="l-1 ">
+          
+                <ion-icon  class="l-6" id="search" name="search-outline" size="small"></ion-icon>
+                <ion-icon data-target="#login" data-toggle="modal" style="background-color: #00A3FF; color: white;" href="cart.html"  class="l-6" id="cart" name="cart-outline"  size="small"></ion-icon>
+                
             </div>
         </div>
 
@@ -44,7 +46,7 @@
             </div>
         </div>
 
-        
+        <div data-target="#login" data-toggle="modal"  id="active-modal"></div>
          <!-- The Modal -->
          <div class="modal fade show" id="login">
             <div class="modal-dialog modal-lg">
